@@ -1,0 +1,79 @@
+.todoItem {
+    display: flex;
+    align-items: center;
+
+    width: 85%;
+    border-radius: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.55);
+
+        .todoItem__right .MuiSvgIcon-root {
+            opacity: 1;
+        }
+    }
+}
+
+.todoItem__left {
+    display: flex;
+
+    p {
+        margin-left: 15px;
+        text-transform: capitalize;
+        font-size: 18px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    input[type=checkbox] {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+}
+
+.todoItem__right .MuiSvgIcon-root {
+    opacity: 0.4;
+}
+
+.todoItem__done {
+    .todoItem__left p {
+        text-decoration: line-through;
+        color: green;
+    }
+
+    .todoItem__edit {
+        display: none;
+    }
+}
+
+.todoItem__edit:hover .MuiSvgIcon-root {
+    color: rgb(0, 102, 255) !important;
+}
+
+.todoItem__delete:hover .MuiSvgIcon-root {
+    color: rgb(255, 0, 0) !important;
+}
+
+.todoItem__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    input {
+        font-size: 18px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: transparent;
+        outline: none;
+    }
+}

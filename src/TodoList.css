@@ -1,0 +1,13 @@
+.todoList {
+    width: 75%;
+    max-width: 800px;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
