@@ -5,12 +5,12 @@ const initialState = {
   todos: [
     {
       id: uuid(),
-      todo: "Learn React",
-      completed: false,
+      todo: "Wake up",
+      completed: true,
     },
     {
       id: uuid(),
-      todo: "Learn Redux",
+      todo: "Crush it",
       completed: false,
     },
   ],
