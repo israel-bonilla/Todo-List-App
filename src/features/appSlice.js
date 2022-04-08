@@ -10,7 +10,7 @@ const initialState = {
     },
     {
       id: uuid(),
-      todo: "Crush it",
+      todo: "First task",
       completed: false,
     },
   ],
